@@ -10,9 +10,10 @@ const canonicalUrl = `${siteUrl}${Astro.url.pathname}`;
 <html lang="es">
   <head>
     <title>{title}</title>
-    <meta name="description" content={description} />
-    <meta charset="UTF-8" />
     <link rel="canonical" href={canonicalUrl} />
+    <meta name="description" content={description} />
+    <meta charset="UTF-8" /> 
+    <meta name="robots" content="index, follow">
 
     <meta property="og:type" content="website" />
     <meta property="og:title" content={title} />
