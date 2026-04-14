@@ -9,21 +9,18 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 <BaseLayout title={title} description={description}>
     <Fragment name="head">
         <script type="application/ld+json">
-            {JSON.stringify({
+            {
               "@context": "https://schema.org",
               "@type": "Article",
-              "headline": "Guía de optimización de imágenes",
+              "headline": "Cómo optimizar imágenes",
               "author": {
                 "@type": "Person",
-                "name": "Tu Nombre"
+                "name": "Tu nombre"
               },
-              "datePublished": "2026-04-14"
-            })}
-            </script>
-
-    <meta property="og:title" content={title} />
-    <meta property="og:description" content={description} />
-    <meta property="og:type" content="article" />
+              "datePublished": "2026-04-14",
+              "image": ["/images/seo.webp"]
+            }
+        </script>
     </Fragment>
     
     <article class="max-w-3xl mx-auto space-y-6">

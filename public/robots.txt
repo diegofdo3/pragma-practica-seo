@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://tu-dominio.com/sitemap.xml
+Sitemap: https://69deaa7288cac3166d4558db--storied-faloodeh-cebf92.netlify.app/sitemap.xml

@@ -1,19 +1,19 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
+const title="Mi Producto"
+const description="Producto optimizado para SEO"
 ---
 
-<BaseLayout title="Mi Producto" description="Producto optimizado para SEO">
+<BaseLayout title={title} description={description}>
 
     <section class="grid md:grid-cols-2 gap-8 items-center">
   
-      <!-- Imagen -->
       <img 
         src="/images/producto.webp"
         alt="Producto artesanal"
         class="rounded-xl shadow"
       />
   
-      <!-- Info -->
       <div class="space-y-4">
   
         <h1 class="text-3xl font-bold">

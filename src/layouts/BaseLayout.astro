@@ -1,6 +1,10 @@
 ---
-const { title, description } = Astro.props;
 import '../styles/global.css';
+const { title, description } = Astro.props;
+
+
+const siteUrl = import.meta.env.PUBLIC_SITE_URL;
+const canonicalUrl = `${siteUrl}${Astro.url.pathname}`;
 ---
 
 <html lang="es">
@@ -8,6 +12,12 @@ import '../styles/global.css';
     <title>{title}</title>
     <meta name="description" content={description} />
     <meta charset="UTF-8" />
+    <link rel="canonical" href={canonicalUrl} />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonicalUrl} />
 
     <slot name="head" />
   </head>
