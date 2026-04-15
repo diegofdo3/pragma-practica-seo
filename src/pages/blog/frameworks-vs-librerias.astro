@@ -1,28 +1,29 @@
 ---
 const title = "Frameworks vs Librerías";
 const description = "Aprende la diferencia entre frameworks y librerías y escoge bien cuál usar";
-
 import diagram from '../../assets/images/framework_library.png'
-
 import BaseLayout from "../../layouts/BaseLayout.astro";
+const siteUrl = import.meta.env.PUBLIC_SITE_URL;
+const canonicalUrl = `${siteUrl}${Astro.url.pathname}`;
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": title,
+  "author": {
+    "@type": "Person",
+    "name": "Diego Hincapié"
+  },
+  "datePublished": "2026-04-14",
+  "image": [`${siteUrl}${diagram.src}`],
+  "url":canonicalUrl
+}
+
 
 ---
 
 <BaseLayout title={title} description={description}>
     <Fragment name="head">
-        <script type="application/ld+json">
-            {
-              "@context": "https://schema.org",
-              "@type": "Article",
-              "headline": "Cómo optimizar imágenes",
-              "author": {
-                "@type": "Person",
-                "name": "Tu nombre"
-              },
-              "datePublished": "2026-04-14",
-              "image": ["/images/seo.webp"]
-            }
-        </script>
+        <script type="application/ld+json" set:html={JSON.stringify(schema)}></script>
     </Fragment>
     
     <article class="max-w-3xl mx-auto space-y-6">

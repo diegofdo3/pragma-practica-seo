@@ -3,9 +3,39 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 import pragpato from '../../assets/images/pragpato-source.jpeg'
 const title="Mi Producto"
 const description="Producto optimizado para SEO"
+
+
+const siteUrl = import.meta.env.PUBLIC_SITE_URL;
+const canonicalUrl = `${siteUrl}${Astro.url.pathname}`;
+const product = {
+  name: "Pragpato",
+  description: "herramienta para exteriorizar bugs",
+  price: "50.000",
+  currency: "cop",
+  image: `${siteUrl}${pragpato.src}`,
+  url: canonicalUrl
+}
+const productSchema = {
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": product.name,
+  "image": [product.image],
+  "description": product.description,
+  "offers": {
+    "@type": "Offer",
+    "url": product.url,
+    "priceCurrency": product.currency,
+    "price": product.price,
+    "availability": "https://schema.org/InStock"
+  }
+};
 ---
 
 <BaseLayout title={title} description={description}>
+
+  <Fragment name="head">
+    <script type="application/ld+json"  set:html={JSON.stringify(productSchema)} ></script>
+  </Fragment>
 
     <section class="grid md:grid-cols-2 gap-8 items-start mt-10">
   
