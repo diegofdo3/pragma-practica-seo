@@ -2,7 +2,7 @@
 
 ## Descripción del proyecto
 
-Este proyecto se realiza como práctica de SEO con el fin de entender y poner en práctica las diferentes estrategias de mejorar y evaluar el rendimiento que puede llegar a tener una página web en términos de alcance de motores de búsqueda.
+Este proyecto se realiza como práctica de SEO con el fin de entender y poner en práctica las diferentes estrategias a la hora de mejorar y evaluar el rendimiento que puede llegar a tener una página web en términos de alcance de motores de búsqueda.
 
 ## Lista de palabras clave
 
