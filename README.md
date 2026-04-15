@@ -1,43 +1,32 @@
-# Astro Starter Kit: Minimal
+# Práctica SEO
 
-```sh
-npm create astro@latest -- --template minimal
-```
+## Descripción del proyecto
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+Este proyecto se realiza como práctica de SEO con el fin de entender y poner en práctica las diferentes estrategias de mejorar y evaluar el rendimiento que puede llegar a tener una página web en términos de alcance de motores de búsqueda.
 
-## 🚀 Project Structure
+## Lista de palabras clave
 
-Inside of your Astro project, you'll see the following folders and files:
+- SEO
+- Schema.org
+- Open Graph
+- Astro
+- lighthouse
+- Blog
+- Semantic HTML
+- Netlify
 
-```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+## Instrucciones de uso
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+Si lo que deseas es correr este proyecto en local, lo puedes hacer de una manera muy fácil, primeramente debes instalar las dependencias con el comando ```npm i```, una vez tengas las dependencias instaladas, bastará con correr el comando ```npm run dev```, para realizar el despliegue es aún más fácil, el repositorio se encuentra enlazado a netlify y con solo subir cambios a master se realiza el despliegue, si lo que quieres es hacer un despliegue desde cero bastará con usar el comando ```npm build```, tomar todo el directorio generado en ./dist y pegarlo en el hosting de tu preferencia.
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+## Multimedia de interés
 
-Any static assets, like images, can be placed in the `public/` directory.
+### Lighthouse
 
-## 🧞 Commands
+![lighthouse](./assets/resultados_lighthouse_1.png)
+![lighthouse2](./assets/resultados_lighthouse_2.png)
 
-All commands are run from the root of the project, from a terminal:
+### Rich Results
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+![richResults1](./assets/rich_results_test_1.png)
+![richResults2](./assets/rich_results_test_2.png)
