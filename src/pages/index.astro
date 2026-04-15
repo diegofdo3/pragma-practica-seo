@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import CardLayout from '../layouts/CardLayout.astro';
 const title="Inicio"
 const description="Página principal"
 ---
@@ -7,29 +8,23 @@ const description="Página principal"
 <BaseLayout title={ title } description={ description }>
 
   <h1 class="text-4xl font-bold mb-6">
-    Bienvenido a Mi Sitio SEO
+    Bienvenido a SEOAPP
   </h1>
 
   <section>
     <h2 class="text-2xl font-semibold mb-4">
-      Últimos artículos
+      Locaciones de interés
     </h2>
 
     <div class="grid gap-4">
 
-      <a href="/blog/como-optimizar-imagenes"
-         class="block p-4 bg-white rounded-xl shadow hover:shadow-lg transition">
-
-        <h3 class="text-xl font-bold">
-          Cómo optimizar imágenes
-        </h3>
-
-        <p class="text-gray-600">
-          Mejora tu SEO optimizando imágenes
-        </p>
-
-      </a>
-
+		<CardLayout cardTitle="Cómo optimizar imágenes" cardDescription="Mejora tu SEO optimizando imágenes" cardRoute="/blog/como-optimizar-imagenes"></CardLayout>
+		<CardLayout cardTitle="Frameworks vs Libraries" cardDescription="Entiende la diferencia entre frameworks y librerías y elige con criterio" cardRoute="/blog/frameworks-vs-librerias"></CardLayout>
+		<CardLayout cardTitle="Cómo optimizar imágenes" cardDescription="Mejora tu SEO optimizando imágenes" cardRoute="/blog/como-optimizar-imagenes"></CardLayout>
+		<CardLayout cardTitle="Frameworks vs Libraries" cardDescription="Entiende la diferencia entre frameworks y librerías y elige con criterio" cardRoute="/blog/frameworks-vs-librerias"></CardLayout>
+		<CardLayout cardTitle="Cómo optimizar imágenes" cardDescription="Mejora tu SEO optimizando imágenes" cardRoute="/blog/como-optimizar-imagenes"></CardLayout>
+		<CardLayout cardTitle="Frameworks vs Libraries" cardDescription="Entiende la diferencia entre frameworks y librerías y elige con criterio" cardRoute="/blog/frameworks-vs-librerias"></CardLayout>
+        <CardLayout cardTitle="Revise nuestro producto estelar" cardDescription="Aquí encontrarás nuestro producto más vendido de la temporada, cuida tu chequera" cardRoute="/producto/mi-producto"></CardLayout>
     </div>
   </section>
 

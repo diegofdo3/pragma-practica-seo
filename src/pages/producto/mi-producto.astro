@@ -1,35 +1,44 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
+import pragpato from '../../assets/images/pragpato-source.jpeg'
 const title="Mi Producto"
 const description="Producto optimizado para SEO"
 ---
 
 <BaseLayout title={title} description={description}>
 
-    <section class="grid md:grid-cols-2 gap-8 items-center">
+    <section class="grid md:grid-cols-2 gap-8 items-start mt-10">
   
       <img 
-        src="/images/producto.webp"
-        alt="Producto artesanal"
+        src={ pragpato.src }
+        alt="Pragpato"
         class="rounded-xl shadow"
       />
   
       <div class="space-y-4">
   
         <h1 class="text-3xl font-bold">
-          Mi Producto
+          Pragpato - Debugging partner
         </h1>
   
         <p class="text-gray-600">
-          Descripción del producto optimizada para SEO.
+            ¿Atascado con un bug que simplemente no quiere morir? 
+            <br>
+            Dale la bienvenida a tu nuevo compañero de equipo: 
+            el Pragpato, diseñado especialmente para mentes tech que saben que a veces la mejor forma 
+            de resolver un problema… es explicarlo en voz alta.
+            <br>
+            Inspirado en la clásica técnica de rubber duck debugging, este pato no solo escucha sin juzgar, sino que 
+            está listo para absorber cada línea de tu lógica confusa, tus edge cases olvidados y esos “esto debería 
+            funcionar” que claramente no están funcionando.
         </p>
   
-        <p class="text-2xl font-semibold text-blue-600">
+        <p class="text-2xl font-semibold text-purple-600">
           $50.000
         </p>
   
         <a href="/contact"
-           class="inline-block bg-blue-600 text-white px-5 py-2 rounded-lg hover:bg-blue-700 transition">
+           class="inline-block bg-purple-600 text-white px-5 py-2 rounded-lg hover:bg-purple-700 transition">
           Comprar ahora
         </a>
   

@@ -1,5 +1,6 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
+import BlogCardLayout from "../../layouts/BlogCardLayout.astro";
 const title = 'Blog'
 const description="Artículos sobre SEO y desarrollo web"
 ---
@@ -12,19 +13,14 @@ const description="Artículos sobre SEO y desarrollo web"
       </h1>
   
       <div class="grid md:grid-cols-2 gap-6">
-  
-        <a href="/blog/como-optimizar-imagenes"
-           class="block p-6 bg-white rounded-xl shadow hover:shadow-lg transition">
-  
-          <h2 class="text-xl font-bold mb-2">
-            Cómo optimizar imágenes
-          </h2>
-  
-          <p class="text-gray-600">
-            Mejora el SEO optimizando imágenes correctamente.
-          </p>
-  
-        </a>
+
+        <BlogCardLayout cardTitle="Cómo optimizar imágenes" cardRoute="/blog/como-optimizar-imagenes" cardDescription="Mejora el SEO optimizando imágenes correctamente."></BlogCardLayout>
+        <BlogCardLayout cardTitle="Frameworks vs Libraries" cardDescription="Entiende la diferencia entre frameworks y librerías y elige con criterio" cardRoute="/blog/frameworks-vs-librerias"></BlogCardLayout>
+        <BlogCardLayout cardTitle="Frameworks vs Libraries" cardDescription="Entiende la diferencia entre frameworks y librerías y elige con criterio" cardRoute="/blog/frameworks-vs-librerias"></BlogCardLayout>
+        <BlogCardLayout cardTitle="Frameworks vs Libraries" cardDescription="Entiende la diferencia entre frameworks y librerías y elige con criterio" cardRoute="/blog/frameworks-vs-librerias"></BlogCardLayout>
+        <BlogCardLayout cardTitle="Frameworks vs Libraries" cardDescription="Entiende la diferencia entre frameworks y librerías y elige con criterio" cardRoute="/blog/frameworks-vs-librerias"></BlogCardLayout>
+        <BlogCardLayout cardTitle="Frameworks vs Libraries" cardDescription="Entiende la diferencia entre frameworks y librerías y elige con criterio" cardRoute="/blog/frameworks-vs-librerias"></BlogCardLayout>
+        <BlogCardLayout cardTitle="Frameworks vs Libraries" cardDescription="Entiende la diferencia entre frameworks y librerías y elige con criterio" cardRoute="/blog/frameworks-vs-librerias"></BlogCardLayout>
   
       </div>
   
